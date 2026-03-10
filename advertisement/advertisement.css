@@ -275,6 +275,7 @@ main {
 .content-box {
   aspect-ratio: 1266/701;
   width: 100%;
+  height: 100%;
   margin-bottom: 15px;
   border-radius: 20px;
 }
