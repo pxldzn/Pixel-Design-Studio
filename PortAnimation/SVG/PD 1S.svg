@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1003.57 978.47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g>
+      <g>
+        <g id="_Radial_Repeat_" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-1" x="307.21" y="741.52" width="389.35" height="84.54" transform="translate(1285.53 281.69) rotate(89.98)"/>
+        </g>
+        <g id="_Radial_Repeat_-2" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-1" x="64.52" y="624.72" width="389.35" height="84.54" transform="translate(877.81 1026.69) rotate(141.41)"/>
+        </g>
+        <g id="_Radial_Repeat_-3" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-1" x="4.53" y="362.16" width="389.35" height="84.54" transform="translate(303.54 843.02) rotate(-167.16)"/>
+        </g>
+        <g id="_Radial_Repeat_-4" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-1" x="172.4" y="151.55" width="389.35" height="84.54" transform="translate(351.83 608.64) rotate(-115.73)"/>
+        </g>
+        <g id="_Radial_Repeat_-5" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-1" x="441.72" y="151.48" width="389.35" height="84.54" transform="translate(185.85 683.19) rotate(-64.3)"/>
+        </g>
+        <g id="_Radial_Repeat_-6" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-1" x="609.7" y="362.01" width="389.35" height="84.54" transform="translate(-69.85 189.37) rotate(-12.87)"/>
+        </g>
+        <g id="_Radial_Repeat_-7" data-name="&amp;lt;Radial Repeat&amp;gt;">
+          <rect class="cls-1" x="549.84" y="624.6" width="389.35" height="84.54" transform="translate(577.94 -318.66) rotate(38.56)"/>
+        </g>
+      </g>
+      <path class="cls-1" d="M555.42,468.03c-1.2,70.47-106.02,70.46-107.22,0,1.2-70.47,106.02-70.46,107.22,0Z"/>
+    </g>
+  </g>
+</svg>

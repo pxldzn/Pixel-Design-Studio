@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Intro</title>
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Preload Outfit Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preload SVG Assets to avoid flicker -->
+    <link rel="preload" href="SVG/PD 1S.svg" as="image">
+    <link rel="preload" href="SVG/PD 2.svg" as="image">
+    <link rel="preload" href="SVG/PD 3.svg" as="image">
+    <link rel="preload" href="SVG/PD 4.svg" as="image">
+    <link rel="preload" href="SVG/PD 5.svg" as="image">
+    <link rel="preload" href="SVG/PD 6.svg" as="image">
+    <link rel="preload" href="SVG/PD 7.svg" as="image">
+    <link rel="preload" href="SVG/PD 8.svg" as="image">
+    <link rel="preload" href="SVG/PD 9F.svg" as="image">
+</head>
+
+<body>
+
+    <div class="animation-container">
+        <!-- The logo images will be injected/swapped here or controlled via opacity -->
+        <img id="logo-display" src="SVG/PD 1S.svg" alt="Logo Animation">
+    </div>
+
+    <div class="counter" id="counter">00</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

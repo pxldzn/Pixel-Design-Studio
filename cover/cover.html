@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="cover.css" />
+    <link rel="stylesheet" href="../contents/transitions.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&family=Darker+Grotesque:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="page-transition-overlay"></div>
+    <nav class="navbar">
+      <div class="nav-text">
+        <span>Pixel</span>
+        <span class="nav-word">
+          <span class="nav-before-hover">Design</span>
+
+          <span class="nav-after-hover">
+            <span class="work-span"
+              ><a href="../landing/landing.html">work</a></span
+            >
+            <span class="about-span"
+              ><a href="../about/about.html">about</a></span
+            >
+          </span>
+        </span>
+        <span>Studio.</span>
+      </div>
+      <a href="../PortAnimation/index.html">
+        <div class="logo"></div>
+      </a>
+    </nav>
+
+    <main>
+      <div class="top-line"></div>
+      <section class="visual-lab">
+        <span>COVER VAULT</span>
+        <span class="view-based-span">01</span>
+      </section>
+      <section class="view-based-section">
+        <div class="top-line view-based-line"></div>
+        <p>
+          A collection of redesigned album covers that reinterpret existing
+          artworks through a new visual lens. Each piece explores an alternative
+          design direction while preserving the original essence, mood, and
+          identity of the record, offering a fresh visual take on familiar
+          releases.
+        </p>
+        <div class="top-line view-based-line"></div>
+      </section>
+      <section class="poster-section">
+        <div class="poster-image sin-decade-img"></div>
+
+        <div class="poster-content">
+          <div class="top-line"></div>
+          <div class="poster-content-heading">Sin Decade</div>
+          <div class="top-line"></div>
+          <p>
+            Inspired by the theatrical decadence of the original Sin Decade by
+            Pretty Maids, this redesign transforms the crowded historical scene
+            into a bold symbolic composition. The restrained layout modernizes
+            the album identity while preserving its dark heavy-metal atmosphere.
+          </p>
+        </div>
+      </section>
+
+      <footer></footer>
+    </main>
+
+    <!-- Poster Preview Modal -->
+    <div id="poster-modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <script src="../contents/transitions.js"></script>
+    <script src="cover.js"></script>
+  </body>
+</html>
