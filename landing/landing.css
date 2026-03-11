@@ -350,7 +350,7 @@ nav {
 /*Background urls*/
 
 .firstImg {
-  background-image: url("../posters/contents/pastlives.jpg");
+  background-image: url("./contents/pastlives.jpg");
 }
 
 .secondImg {
