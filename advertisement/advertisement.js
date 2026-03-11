@@ -111,7 +111,7 @@ function initSlider(container) {
     sliderTrack.style.transition = "transform 0.3s ease-out";
 
     const movedBy = currentTranslate - prevTranslate;
-    const threshold = 100;
+    const threshold = 60;
 
     if (movedBy < -threshold) {
       currentIndex += 1;
