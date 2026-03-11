@@ -316,16 +316,27 @@ nav {
   letter-spacing: -6%;
 }
 
-.image-container:hover::before {
+@media (hover: hover) {
+  .image-container:hover::before {
+    opacity: 1;
+  }
+
+  .image-container:hover .hover-text {
+    opacity: 1;
+  }
+
+  .hover-text:hover {
+    color: #ff4001;
+  }
+}
+
+/* Touch-device hover effect (applied/removed via JS) */
+.image-container.touch-active::before {
   opacity: 1;
 }
 
-.image-container:hover .hover-text {
+.image-container.touch-active .hover-text {
   opacity: 1;
-}
-
-.hover-text:hover {
-  color: #ff4001;
 }
 
 /*Background urls*/

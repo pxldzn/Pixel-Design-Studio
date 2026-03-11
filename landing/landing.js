@@ -1,14 +1,14 @@
-document.addEventListener("contextmenu", e => e.preventDefault());
+// document.addEventListener("contextmenu", e => e.preventDefault());
 
-document.addEventListener("keydown", e => {
-  if (
-    e.key === "F12" ||
-    (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
-    (e.ctrlKey && e.key === "U")
-  ) {
-    e.preventDefault();
-  }
-});
+// document.addEventListener("keydown", e => {
+//   if (
+//     e.key === "F12" ||
+//     (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
+//     (e.ctrlKey && e.key === "U")
+//   ) {
+//     e.preventDefault();
+//   }
+// });
 
 
 let lastScrollY = window.scrollY;
@@ -59,5 +59,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const gridItems = document.querySelectorAll(".grid-item");
   gridItems.forEach((item) => {
     item.classList.add("animate-in");
+  });
+
+  // ===== Touch hover effect =====
+  const imageContainers = document.querySelectorAll(".image-container");
+  imageContainers.forEach((container) => {
+    container.addEventListener("touchstart", () => {
+      // Clear all others first
+      imageContainers.forEach((c) => c.classList.remove("touch-active"));
+      container.classList.add("touch-active");
+    });
+    container.addEventListener("touchend", () => {
+      container.classList.remove("touch-active");
+    });
+    container.addEventListener("touchcancel", () => {
+      container.classList.remove("touch-active");
+    });
+  });
+
+  // Reset touch-active state when navigating back (bfcache or normal)
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      document.querySelectorAll(".image-container.touch-active").forEach((el) => {
+        el.classList.remove("touch-active");
+      });
+    }
   });
 });
