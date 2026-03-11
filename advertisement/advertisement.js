@@ -266,7 +266,7 @@ function initSlider(container) {
     if (clickAllowed && e.target.tagName === "IMG") {
       const modal = document.getElementById("poster-modal");
       const modalImg = document.getElementById("modal-img");
-      modal.style.display = "flex";
+      modal.classList.add('active');
       modalImg.src = e.target.src;
       isModalOpen = true;
 
@@ -290,7 +290,7 @@ document.querySelectorAll(".content-img").forEach((img) => {
   img.addEventListener("click", () => {
     const modal = document.getElementById("poster-modal");
     const modalImg = document.getElementById("modal-img");
-    modal.style.display = "flex";
+    modal.classList.add('active');
     modalImg.src = img.src;
     isModalOpen = true;
     sliderControls.forEach((control) => control.stop());
@@ -320,7 +320,7 @@ const modal = document.getElementById("poster-modal");
 const span = document.getElementsByClassName("close")[0];
 
 function closeModal() {
-  modal.style.display = "none";
+  modal.classList.remove('active');
   isModalOpen = false;
   // Resume sliders
   sliderControls.forEach((control) => control.resume());

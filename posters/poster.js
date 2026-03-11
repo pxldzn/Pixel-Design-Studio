@@ -62,26 +62,26 @@ posters.forEach(poster => {
     // Extract url from background-image: url("...")
     const src = bgImage.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
 
-    modal.style.display = "flex";
+    modal.classList.add('active');
     modalImg.src = src;
   });
 });
 
 // Close when clicking the X
 span.onclick = function () {
-  modal.style.display = "none";
+  modal.classList.remove('active');
 }
 
 // Close when clicking outside the image
 modal.onclick = function (event) {
   if (event.target === modal) {
-    modal.style.display = "none";
+    modal.classList.remove('active');
   }
 }
 
 // Close when pressing Escape
 document.addEventListener('keydown', function (event) {
   if (event.key === "Escape") {
-    modal.style.display = "none";
+    modal.classList.remove('active');
   }
 });

@@ -57,3 +57,39 @@
         }
     });
 })();
+
+// ===== Scroll-Reveal Observer =====
+(function () {
+    const revealEls = document.querySelectorAll(".reveal");
+    if (!revealEls.length) return;
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // animate once only
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    revealEls.forEach((el) => observer.observe(el));
+})();
+
+// ===== Image Fade-on-Load =====
+(function () {
+    const images = document.querySelectorAll("img.img-reveal");
+    if (!images.length) return;
+
+    images.forEach((img) => {
+        if (img.complete) {
+            img.classList.add("loaded");
+        } else {
+            img.addEventListener("load", () => img.classList.add("loaded"), {
+                once: true,
+            });
+        }
+    });
+})();

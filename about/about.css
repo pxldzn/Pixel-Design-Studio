@@ -157,6 +157,7 @@ nav {
     padding: 0 30px;
 
     transition: transform 0.3s ease;
+    will-change: transform;
 }
 
 .navbar--hidden {

@@ -57,19 +57,19 @@ const posters = document.querySelectorAll('.content-logo');
 
 posters.forEach(poster => {
   poster.addEventListener('click', function () {
-    modal.style.display = "flex";
+    modal.classList.add('active');
     modalImg.src = this.src;
   });
 });
 
 // Close when clicking the X
 span.onclick = function () {
-  modal.style.display = "none";
+  modal.classList.remove('active');
 }
 
 // Close when clicking outside the image
 modal.onclick = function (event) {
   if (event.target === modal) {
-    modal.style.display = "none";
+    modal.classList.remove('active');
   }
 }
