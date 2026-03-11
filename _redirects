@@ -1,4 +1,4 @@
 # Netlify redirects
 # The root index.html handles the main redirect via meta refresh
 # This file is here as a safety net for clean URL access
-/  /landing/landing.html  302
+/  /PortAnimation/index.html  302
