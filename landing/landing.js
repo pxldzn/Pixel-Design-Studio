@@ -68,13 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // Clear all others first
       imageContainers.forEach((c) => c.classList.remove("touch-active"));
       container.classList.add("touch-active");
-    });
+    }, { passive: true });
     container.addEventListener("touchend", () => {
       container.classList.remove("touch-active");
-    });
+    }, { passive: true });
     container.addEventListener("touchcancel", () => {
       container.classList.remove("touch-active");
-    });
+    }, { passive: true });
   });
 
   // Reset touch-active state when navigating back (bfcache or normal)

@@ -270,6 +270,7 @@ nav {
   aspect-ratio: 627.5197 / 431.7192;
   overflow: hidden;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -286,6 +287,9 @@ nav {
 
   transform: translateZ(0);
   backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .image-container::before {
