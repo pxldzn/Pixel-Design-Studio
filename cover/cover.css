@@ -73,6 +73,9 @@ nav {
   padding: 0 83px;
 
   transition: transform 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .navbar--hidden {
@@ -87,6 +90,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-word {
